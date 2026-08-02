@@ -10,7 +10,6 @@ This is a Vite + React recruitment website for Team SRM Hackathon. It includes a
 
 ![Recruitment portal screenshot](public/vercel-homepage.png)
 
-![Hack logo preview](public/hack-logo.png)
 
 ## Run Locally
 
