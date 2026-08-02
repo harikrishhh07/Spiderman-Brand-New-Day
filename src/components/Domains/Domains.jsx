@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ElementsCanvas from "../recruitment/ElementsCanvas";
-import { Flame, Mountain, Handshake, Wind, Palette, Newspaper, Megaphone, Landmark, ChevronRight, Check } from "lucide-react";
+import { Flame, Mountain, Handshake, Wind, Palette, Newspaper, Megaphone, Send, ChevronRight, Check } from "lucide-react";
 import fireElementImg from "../../assets/images/fire-element.png";
 import waterElementImg from "../../assets/images/water-element.png";
 import earthElementImg from "../../assets/images/earth-element.png";
@@ -9,7 +9,7 @@ import airElementImg from "../../assets/images/air-element.png";
 const domains = [
   {
     id: "tech",
-    title: "Firebender",
+    title: "Technical (Firebender)",
     badge: "FORGE & DEPLOY",
     desc: "Build full-stack web applications, mobile platforms, and AI integrations for club hackathons.",
     icon: Flame,
@@ -23,7 +23,7 @@ const domains = [
   },
   {
     id: "nontech",
-    title: "Earthbender",
+    title: "Non Tech (Earthbender)",
     badge: "GROUND COMMAND",
     desc: "Orchestrate flagship events, coordinate team operations, and lead national-scale hackathons.",
     icon: Mountain,
@@ -37,7 +37,7 @@ const domains = [
   },
   {
     id: "sponsorship",
-    title: "White Lotus",
+    title: "Sponsorships (White Lotus)",
     badge: "ALLIANCE COUNCIL",
     desc: "Connect with top tech companies, secure high-value event sponsorships, and build industry ties.",
     icon: Handshake,
@@ -51,7 +51,7 @@ const domains = [
   },
   {
     id: "logistics",
-    title: "Sky Bison Corps",
+    title: "Logistics (Sky Bison Corps)",
     badge: "TRANSPORT COMMAND",
     desc: "Ensure seamless venue management, tech equipment setup, and smooth event ground execution.",
     icon: Wind,
@@ -65,7 +65,7 @@ const domains = [
   },
   {
     id: "creatives",
-    title: "Airbender",
+    title: "Creatives (Airbender)",
     badge: "FREE-FLOW DESIGN",
     desc: "Craft modern UI design systems, event graphics, posters, and digital branding assets.",
     icon: Palette,
@@ -79,7 +79,7 @@ const domains = [
   },
   {
     id: "content",
-    title: "Scrollkeeper",
+    title: "Content (Scrollkeeper)",
     badge: "ARCHIVE LEAD",
     desc: "Write technical blogs, event press releases, and engaging social media copy.",
     icon: Newspaper,
@@ -93,7 +93,7 @@ const domains = [
   },
   {
     id: "publicity",
-    title: "Messenger Hawk",
+    title: "Publicity (Messenger Hawk)",
     badge: "SIGNAL FLIGHT",
     desc: "Drive outreach across SRM campus, produce video reels, and grow audience channels.",
     icon: Megaphone,
@@ -106,18 +106,18 @@ const domains = [
     highlights: ["Campus Promotions", "Reels & Video Production", "Social Media Growth"],
   },
   {
-    id: "finance",
-    title: "Ba Sing Se Treasury",
-    badge: "VAULT COMMAND",
-    desc: "Manage event budgets, track prize pool disbursements, and oversee club finances.",
-    icon: Landmark,
-    elementImg: earthElementImg,
-    elementName: "EARTH KINGDOM",
-    color: "from-emerald-600 via-teal-500 to-indigo-700",
-    accent: "text-emerald-300 border-emerald-500/40 bg-emerald-500/10",
-    cardGlow: "hover:shadow-[0_0_35px_rgba(16,185,129,0.45)] hover:border-emerald-400/80 border-emerald-500/30",
-    glowAura: "from-emerald-500/20 via-indigo-500/10 to-transparent",
-    highlights: ["Budget Management", "Prize Distribution", "Financial Auditing"],
+    id: "social-media",
+    title: "Social Media (Messenger Hawk)",
+    badge: "SIGNAL BOOST",
+    desc: "Plan social content, manage audience engagement, and amplify recruitment and event campaigns.",
+    icon: Send,
+    elementImg: fireElementImg,
+    elementName: "FIRE NATION",
+    color: "from-rose-500 via-orange-500 to-amber-500",
+    accent: "text-rose-200 border-rose-400/40 bg-rose-500/10",
+    cardGlow: "hover:shadow-[0_0_35px_rgba(244,63,94,0.45)] hover:border-rose-300/80 border-rose-400/30",
+    glowAura: "from-rose-500/20 via-orange-500/10 to-transparent",
+    highlights: ["Content Calendar", "Audience Engagement", "Campaign Analytics"],
   },
 ];
 
