@@ -2,9 +2,11 @@
 
 This is a Vite + React recruitment website for Team SRM Hackathon. It includes a branded landing page, domain cards, event highlights, team info, and recruitment-focused sections with a custom Hack logo.
 
-## Sample Screenshot
+## Website Screenshots
 
 ![Recruitment portal screenshot](public/readme-sample.png)
+
+![Hack logo preview](public/hack-logo.png)
 
 ## Run Locally
 
@@ -14,3 +16,8 @@ npm run dev
 ```
 
 The app is set up with Vite, React, and Tailwind CSS.
+
+## Notes
+
+- The screenshots above are the current website assets used in the deployed experience.
+- If you update the UI, regenerate the screenshots in `public/` so the README stays current.
