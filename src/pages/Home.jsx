@@ -6,7 +6,7 @@ import Navbar from '../components/common/Navbar';
 import SpiderHeroSection from '../components/hero/SpiderHeroSection';
 import SpiderSwingSection from '../components/scrolly/SpiderSwingSection';
 import WebJourneySection from '../components/recruitment/WebJourneySection';
-import SpiderTeamsComic from '../components/teams/SpiderTeamsComic';
+import SpiderTeamsComic from '../components/Teams/SpiderTeamsComic';
 import SpiderSenseSection from '../components/sense/SpiderSenseSection';
 import SpiderWebTimeline from '../components/timeline/SpiderWebTimeline';
 import WebCocoonRegistration from '../components/registration/WebCocoonRegistration';
