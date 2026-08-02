@@ -4,7 +4,7 @@ This is a Vite + React recruitment website for Team SRM Hackathon. It includes a
 
 ## Live Demo
 
-[spiderman-brand-new-day-enhu.vercel.app](https://spiderman-brand-new-day-enhu.vercel.app)
+[spiderman-brand-new-day-enhu.vercel.app](https://spiderman-brand-new-day-tsh.vercel.app)
 
 ## Website Screenshots
 
