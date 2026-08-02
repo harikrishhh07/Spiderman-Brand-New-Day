@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-b from-[#020617] via-[#040d1a] to-[#020409] text-[#e2e8f0];
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Cinzel', serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    /* Noise texture */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
+    /* Glowing Blue Arrow / Avatar Glow Top */
+    radial-gradient(
+      ellipse 80% 50% at 50% 0%,
+      rgba(6, 182, 212, 0.28),
+      transparent 70%
+    ),
+    /* Electric Cobalt Glow Right */
+    radial-gradient(
+      ellipse 70% 70% at 70% 40%,
+      rgba(59, 130, 246, 0.22),
+      transparent 60%
+    ),
+    /* Sky Blue Ambient Glow Left */
+    radial-gradient(
+      ellipse 60% 50% at 20% 80%,
+      rgba(14, 165, 233, 0.20),
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Additional noise grain effect */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: -1;
+  animation: grain 30s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-2%, -3%);
+  }
+  20% {
+    transform: translate(-4%, 2%);
+  }
+  30% {
+    transform: translate(2%, -5%);
+  }
+  40% {
+    transform: translate(-2%, 5%);
+  }
+  50% {
+    transform: translate(-3%, 3%);
+  }
+  60% {
+    transform: translate(4%, 0%);
+  }
+  70% {
+    transform: translate(0%, 4%);
+  }
+  80% {
+    transform: translate(1%, 6%);
+  }
+  90% {
+    transform: translate(-3%, 2%);
+  }
+}
+.clip-path-diagonal {
+  clip-path: polygon(
+    20% 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+/* Gradient animation for hero text */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
